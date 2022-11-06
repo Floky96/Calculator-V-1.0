@@ -1,0 +1,117 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.calc-top {
+  height: 15rem;
+  width: 50rem;
+  padding: 2rem;
+  background-color: rgb(99, 99, 185);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calc-top .calc-input {
+  width: 50%;
+}
+.calc-top .calc-input h1 {
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+.calc-top .calc-input h2 {
+  padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
+  margin: 0;
+  font-size: 0.9rem;
+  color: white;
+}
+.calc-top .calc-input .form-default {
+  border: 0;
+  border-radius: 2px;
+  width: 80%;
+  height: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.calc-top .calc-input .form-default:focus {
+  background-color: rgb(168, 168, 168);
+  color: white;
+}
+.calc-top .calc-input input {
+  border: 0;
+  outline: 0;
+  padding-left: 0.5rem;
+}
+.calc-top .calc-summ {
+  width: 50%;
+}
+.calc-top .calc-summ .calc-summArea {
+  border-radius: 6px;
+  width: 90%;
+  height: 6rem;
+  background-color: white;
+  margin-top: 4.7rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.calc-bottom {
+  height: 2rem;
+  width: 50rem;
+  padding: 2rem;
+  background-color: rgb(153, 76, 24);
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calc-bottom .operatorStyleLeft {
+  height: 2rem;
+  width: 3rem;
+  background-color: rgb(99, 99, 185);
+  border: none;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.486);
+  border-radius: 2px;
+}
+.calc-bottom .operatorStyleLeft:focus {
+  background-color: rgba(216, 216, 115, 0.342);
+}
+.calc-bottom .buttonStyleRight {
+  height: 2rem;
+  width: 12rem;
+  background-color: rgb(99, 99, 185);
+  border: none;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.486);
+  border-radius: 2px;
+}
+.calc-bottom .buttonStyleRight:active {
+  background-color: rgba(216, 216, 115, 0.342);
+}
+
+.operatorNull {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(211, 67, 67, 0.644);
+  color: white;
+  border-radius: 2px;
+}/*# sourceMappingURL=rechner.css.map */

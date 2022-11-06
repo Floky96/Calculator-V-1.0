@@ -1,0 +1,136 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container {
+    height: fit-content;
+    width: fit-content;
+}
+
+// Start Top Part Calculator
+.calc-top {
+    height: 15rem;
+    width: 50rem;
+    padding: 2rem;
+    background-color: rgb(99, 99, 185);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .calc-input {
+        width: 50%;
+
+
+        h1 {
+            font-weight: 700;
+            color: white;
+            margin: 0;
+            padding-bottom: .5rem;
+        }
+
+        h2 {
+            padding-bottom: .4rem;
+            padding-top: .4rem;
+            margin: 0;
+            font-size: .9rem;
+            color: white;
+        }
+
+        .form-default {
+            border: 0;
+            border-radius: 2px;
+            width: 80%;
+            height: 1.5rem;
+            margin-bottom: .3rem;
+
+
+            &:focus {
+                background-color: rgb(168, 168, 168);
+                color: white;
+            }
+        }
+
+        input {
+            border: 0;
+            outline: 0;
+            padding-left: .5rem;
+        }
+    }
+
+    .calc-summ {
+        width: 50%;
+
+        .calc-summArea {
+            border-radius: 6px;
+            width: 90%;
+            height: 6rem;
+            background-color: white;
+            margin-top: 4.7rem;
+            margin-left: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+        }
+    }
+}
+
+// Ende Top Part Calculator
+
+
+
+// Start Bottom Part Calculator
+.calc-bottom {
+    height: 2rem;
+    width: 50rem;
+    padding: 2rem;
+    background-color: rgb(153, 76, 24);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .operatorStyleLeft {
+        height: 2rem;
+        width: 3rem;
+        background-color: rgb(99, 99, 185);
+        border: none;
+        color: white;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.486);
+        border-radius: 2px;
+
+
+        &:focus {
+            background-color: rgba(216, 216, 115, 0.342);
+        }
+    }
+
+    .buttonStyleRight {
+        height: 2rem;
+        width: 12rem;
+        background-color: rgb(99, 99, 185);
+        border: none;
+        color: white;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.486);
+        border-radius: 2px;
+
+        &:active {
+            background-color: rgba(216, 216, 115, 0.342);
+        }
+    }
+
+
+}
+
+.operatorNull {
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(211, 67, 67, 0.644);
+    color: white;
+    border-radius: 2px;
+}
+
+// Ende Bottom Part Calculator

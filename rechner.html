@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechner</title>
+    <link rel="stylesheet" type="text/css" href="./css/rechner.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Play:wght@400;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!------------------------------------------------------ Start Top Part Calculator --------------------------------------------------------------------->
+        <div class="calc-top">
+            <!-- Start Benutzer Eingabe-->
+            <div class="calc-input">
+                <h1>Taschenrechner</h1>
+
+
+                <h2>Erste Zahl</h2>
+                <input type="text" class="form-default" id="userInput1" placeholder="0">
+
+                <h2>Zweite Zahl</h2>
+                <input type="text" class="form-default" id="userInput2" placeholder="0">
+            </div>
+            <!-- Ende Benutzer Eingabe-->
+
+            <!-- Start Rezultat Display-->
+            <div class="calc-summ">
+                <div class="calc-summArea" id="calc-summArea">
+                    <p>0</p>
+                </div>
+            </div>
+            <!-- Ende Rezultat Display-->
+
+        </div>
+        <!------------------------------------------------------- Ende Top Part Calculator ---------------------------------------------------------------------->
+
+        <!------------------------------------------------------- Start Bottom Part Calculator ------------------------------------------------------------------>
+        <div class="calc-bottom">
+            <!--Start Operator Buttons-->
+            <div class="calc-operators" id="calc-operators">
+                <button class="operatorPlus operatorStyleLeft" onfocus="plusFocus()">+</button>
+                <button class="operatorMinus operatorStyleLeft" onfocus="minusFocus()">-</button>
+                <button class="operatorMultiply operatorStyleLeft" onfocus="multiplyFocus()">*</button>
+                <button class="operatorDivide operatorStyleLeft" onfocus="divideFocus()">/</button>
+            </div>
+            <!--Ende Operator Buttons-->
+
+            <!--Start Ergebnis & Reset Buttons-->
+            <div class="calc-calc"><button class="calc-calc buttonStyleRight"
+                    onclick="pullUserInput(), pullOperator(userInput1, userInput2, operator)">Ausrechnen</button>
+            </div>
+            <div class="calc-reset"><button class="calc-resetBtn buttonStyleRight" id="hardReset"
+                    onclick="hardReset(text)">Reset</button>
+            </div>
+        </div>
+        <!--Ende Ergebnis & Reset Buttons-->
+
+        <!--Start No Operator / Input Warning-->
+        <div class="operatorNull" id="inputNull"></div>
+        <!--Start No Operator / Input Warning-->
+        <!-------------------------------------------------------- Ende Bottom Part Calculator ------------------------------------------------------------------->
+    </div>
+
+
+    <script src="./js/rechner.js"></script>
+
+
+</body>
+
+</html>
